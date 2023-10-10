@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Seats from "./Components/Seats";
-
+import { PiArmchair } from "react-icons/pi";
 
 function App() {
   const [ticketType, setTicketType] = useState("Standard");
@@ -57,9 +57,18 @@ function App() {
               />
             </div>
           </div>
+          <h3>Key to Seat Layout:</h3>
+          <div className="footer">
+            <PiArmchair className="logo1"/> Available
+          </div>
+          <div className="footer">
+            <PiArmchair className="logo2"/> Unavailable
+          </div>
+          <div className="footer">
+            <PiArmchair className="logo3"/> Your Selection
+          </div>
         </div>
       </div>
-
     </div>
   );
 }

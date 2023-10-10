@@ -1,11 +1,9 @@
 import React from "react";
-import './seats.css';
+import "./seats.css";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {
-    PiArmchair,
-  } from "react-icons/pi";
+import { PiArmchair } from "react-icons/pi";
 
 const Seats = (props) => {
   let ticketNumber = props.quanityOfTicket;
@@ -65,7 +63,7 @@ const Seats = (props) => {
         isZero: data,
         isSelected: false,
         isBooked: false,
-        type: "standard",
+        type: data === 1 ? "standard" : data === 2 ? "premium" : "none",
       }))
     )
   );
@@ -126,7 +124,9 @@ const Seats = (props) => {
   };
   return (
     <div className="container">
-      <div class="screen"><h3>Screen this Side</h3></div>
+      <div className="screen">
+        <h3>Screen this Side</h3>
+      </div>
       {seats.map((row, index1) => {
         return (
           <div key={index1} style={{ display: "flex", width: "95%" }}>
@@ -172,7 +172,6 @@ const Seats = (props) => {
         pauseOnHover
         theme="light"
       />
-      
     </div>
   );
 };
