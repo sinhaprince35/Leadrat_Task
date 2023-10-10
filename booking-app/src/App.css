@@ -1,0 +1,167 @@
+* {
+  margin-left: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: monospace;
+}
+
+.main_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: rgb(166, 166, 166); */
+}
+.main_container_inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dropdown {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+#qty{
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+}
+#qty option {
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Style the selected option */
+#qty option:checked {
+  background-color: #007bff; 
+  color: #fff; 
+}
+#tickettype {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px; 
+}
+
+
+#tickettype option {
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+}
+
+
+#tickettype option:checked {
+  background-color: #007bff; 
+  color: #fff; 
+}
+
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: monospace;
+}
+
+.main_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: rgb(166, 166, 166); */
+}
+
+.main_container_inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dropdown {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+
+.dropdown select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+}
+
+
+.dropdown select option {
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+}
+
+
+.dropdown select option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .dropdown select {
+    font-size: 14px;
+  }
+}
+
+
+
+
